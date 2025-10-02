@@ -1,0 +1,162 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply box-border m-0 p-0;
+  }
+  body {
+    @apply text-black;
+    font-family: Arial, sans-serif;
+    background: #fff;
+  }
+  
+  /* Nawigacja */
+  .navbar {
+    @apply flex justify-between items-center px-[10%] py-2.5;
+    background: #f7f7f7;
+  }
+  .nav-left {
+    @apply flex gap-[15px];
+  }
+  .nav-btn {
+    @apply text-white no-underline font-[bold] transition-[0.3s] px-[15px] py-2 rounded-md hover:opacity-70;
+    background: #93041c;
+  }
+  .nav-right a {
+    @apply text-[#93041C] text-xl no-underline transition-[0.3s] ml-[15px] hover:opacity-60;
+  }
+  
+  /* Header */
+  .header {
+    @apply flex justify-center items-center text-center px-0 py-5;
+    background: #fff;
+  }
+  .header .logo {
+    @apply w-[150px] mr-10;
+  
+    /* odstęp między logo a tekstem zabawa z alignem zeby ladnie bylo*/
+  }
+  .header h1 {
+    @apply text-[32px] font-[bold] text-black leading-[1.3];
+  
+    /*text-align: left; /* tekst obok logo do lewej nie wiem ktore lepiej wyglada */
+  }
+  
+  /* Footer */
+  .footer {
+    @apply clear-both flex justify-between flex-wrap px-[10%] py-[30px];
+    background: #f7f7f7;
+  }
+  .footer-left h3 {
+    @apply text-lg mb-[15px];
+  }
+  .socials a {
+    @apply text-[#93041C] text-xl transition-[0.3s] mr-[15px] hover:opacity-60;
+  }
+  .footer-right {
+    @apply max-w-[400px];
+  }
+  .footer-right p {
+    @apply mx-0 my-[5px];
+  }
+  
+  /* Main 
+  main {
+      
+  }*/
+  
+  /* Bloki w main */
+  .block {
+    @apply w-full px-[10%] py-[30px];
+  }
+  .block img {
+    @apply max-w-full rounded-lg;
+  }
+  .image-wrapper {
+    @apply w-full h-[470px] overflow-hidden rounded-lg;
+  
+    /* ukrywa resztę zdjęcia PRZYTNIJ ZDJ JUTRO*/
+  }
+  .image-wrapper img {
+    @apply w-full h-full object-cover object-bottom;
+  
+    /* przycięcie */
+  
+    /* wyświetla dół obrazka */
+  }
+  
+  /* Przycisk */
+  .block-btn {
+    @apply float-right text-white no-underline font-[bold] transition-[0.3s] mb-[15px] px-[15px] py-2 rounded-md hover:opacity-60;
+    background: #93041c;
+  }
+  .block-gray {
+    @apply bg-[#F7F7F7];
+  }
+  .block-white {
+    @apply bg-[white];
+  }
+  .strefy {
+    @apply flex justify-between w-full;
+  
+    /*align-items: top;*/
+  }
+  .strefa {
+    @apply w-[25vw] h-auto;
+  }
+  .strefa > img {
+    @apply w-full h-[13vw];
+  }
+  .strefa > h2,
+  p {
+    @apply m-2.5;
+  }
+  .strefa > h2 {
+    @apply text-[33px];
+  }
+  .strefa > p {
+    @apply text-[25px];
+  }
+  .strefa > a {
+    @apply block transition-transform duration-[0.3s] hover:scale-105;
+  }
+  h2 {
+    @apply text-[40px];
+  }
+  h3 {
+    @apply text-[26px];
+  }
+  div.lewy {
+    @apply w-[55%];
+  }
+  div.prawy {
+    @apply w-[45%] h-full p-5;
+  }
+  .sekcjainicjatyw {
+    @apply flex justify-between;
+  }
+  .inicjatywa-wrapper {
+    @apply w-[55%];
+  }
+  .inicjatywyBlok {
+    @apply p-2.5;
+  }
+  .inicjatywyBlok > p {
+    @apply text-[22px];
+  }
+  .inicjatywyNaglowek {
+    @apply text-center mb-5;
+  }
+  .sekcjawspolpracy {
+    @apply clear-both;
+  }
+  .wspolpraca {
+    @apply flex justify-between items-center;
+  }
