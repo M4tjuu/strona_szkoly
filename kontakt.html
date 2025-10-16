@@ -127,90 +127,86 @@
 
   <!-- Main -->
   <main>
+    <!-- Bootstrap odizolowany-->
+    <div id="bootstrap-zone" class="w-auto mb-10 mx-[5%] lg:mb-16 lg:mx-[10%] py-8 bg-[#F7F7F7] clear-both"></div>
 
-    <section class="w-full px-[5%] lg:px-[10%] py-8 bg-[#F7F7F7]">
-      <a href="#"
-        class="float-right bg-[#93041C] text-white px-4 py-2 rounded-md font-bold no-underline hover:opacity-60 transition mb-4 inline-block">O
-        szkole <i class="fa-solid fa-arrow-right"></i></a>
-      <div class="w-full h-[200px] md:h-[300px] lg:h-[400px] xl:h-[500px] overflow-hidden rounded-lg">
-        <img src="img/szkola.png" alt="Budynek szkoły" class="w-full h-full object-cover object-bottom">
-      </div>
-    </section>
+    <script>
+      const zone = document.getElementById('bootstrap-zone');
+      const shadow = zone.attachShadow({ mode: 'open' });
+      shadow.innerHTML = `
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <section class="w-full px-[5%] lg:px-[10%] py-8 bg-white flex justify-between">
-      <div class="w-[25vw]">
-        <a href="#" class="block hover:scale-105 transition-transform">
-          <img src="img/uczen.png" alt="Uczeń" class="w-full h-[13vw] rounded-lg">
-        </a>
-        <h2 class="text-lg sm:text-2xl lg:text-3xl text-gray-900 font-extrabold leading-none tracking-tight mb-2 mt-4">
-          Strefa ucznia</h2>
-        <p class="text-md sm:text-xl lg:text-2xl">Sprawdź aktualności, zmiany w planie lekcji, najbliższe dni wolne</p>
-      </div>
-      <div class="w-[25vw]">
-        <a href="#" class="block hover:scale-105 transition-transform">
-          <img src="img/rodziccropped.png" alt="Rodzic" class="w-full h-[13vw] rounded-lg">
-        </a>
-        <h2 class="text-lg sm:text-2xl lg:text-3xl text-gray-900 font-extrabold leading-none tracking-tight mb-2 mt-4">
-          Strefa rodzica</h2>
-        <p class="text-md sm:text-xl lg:text-2xl">Informacje o składkach, zebraniach, wycieczkach</p>
-      </div>
-      <div class="w-[25vw]">
-        <a href="#" class="block hover:scale-105 transition-transform">
-          <img src="img/kandydatcropped.png" alt="Kandydat" class="w-full h-[13vw] rounded-lg">
-        </a>
-        <h2 class="text-lg sm:text-2xl lg:text-3xl text-gray-900 font-extrabold leading-none tracking-tight mb-2 mt-4">
-          Strefa kandydata</h2>
-        <p class="text-md sm:text-xl lg:text-2xl">Dowiedz się więcej o poszczególnych kierunkach</p>
-      </div>
-    </section>
+        <div class="container">
+          <div class="bg-dark p-4 p-md-5 rounded-4 shadow-sm">
+            <h2 class="fw-bold text-danger mb-4 fs-2 fs-md-1 text-center">Kontakt</h2>
 
-    <section class="w-full px-[5%] lg:px-[10%] py-8 bg-[#F7F7F7] flex flex-wrap justify-between">
-      <!-- Kontener obrazka -->
-      <div class="w-full 2xl:w-[55%]">
-        <img src="img/inicjatywa.png" alt="Inicjatywa" class="w-full rounded-lg">
-      </div>
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <p class="fs-6 fs-md-5 mb-4">
+                  <strong>Wszelką korespondencję prosimy kierować na adres:</strong><br>
+                  <span class="fw-semibold">Technikum Mechatroniczne nr 1 im. Piotra Drzewieckiego</span><br>
+                  ul. Wiśniowa 56<br>
+                  02-520 Warszawa<br>
+                </p>
 
-      <!-- Kontener tekstu -->
-      <div class="w-full 2xl:w-[45%] mt-8 2xl:mt-0 p-0 2xl:px-5">
-        <h2 class="text-2xl sm:text-4xl lg:text-5xl text-gray-900 mb-6 font-extrabold leading-none tracking-tight">
-          Inicjatywy uczniowskie</h2>
-        <div class="p-2">
-          <h3 class="text-xl sm:text-3xl lg:text-4xl text-gray-900 mb-4 font-bold leading-none tracking-tight">
-            Wolontariat</h3>
-          <p class="text-lg sm:text-2xl lg:text-3xl leading-none">Dołącz do zespołu organizującego m.in. zbiórki
-            pieniędzy na szczytne cele.</p>
+                <p class="fs-6 fs-md-5 mb-4">
+                  <strong>Telefon:</strong> 22 646-44-99 lub 22 646-44-98
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-4">
+                  <strong>Wszystkie sprawy związane z rekrutacją:</strong><br>
+                  <a href="mailto:rekrutacja@tm1.edu.pl" class="text-decoration-none text-dark">rekrutacja@tm1.edu.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Kontaktu za pośrednictwem platformy ePUAP:</strong><br>
+                  <a href="https://epuap.gov.pl" target="_blank" class="text-decoration-none text-dark">https://epuap.gov.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Inspektor Ochrony Danych Osobowych:</strong><br>
+                  Stanisław Rudowski<br>
+                  e-mail: <a href="mailto:srowski.iod@dbfomokotow.pl" class="text-decoration-none text-dark">srowski.iod@dbfomokotow.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-0">
+                  <strong>Adres do e-doręczeń:</strong><br>
+                  TI – AE:PL-46723-52871-URRSU-33
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Sekretariat dyrektora, pok. 105:</strong><br>
+                  tel. wew. 113, e-mail: <a href="mailto:szkola@tm1.edu.pl" class="text-decoration-none text-dark">szkola@tm1.edu.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Sekretariat uczniowski, pok. 104:</strong><br>
+                  tel. wew. 111, e-mail: <a href="mailto:sekretariat@tm1.edu.pl" class="text-decoration-none text-dark">sekretariat@tm1.edu.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Specjalista ds. archiwum:</strong><br>
+                  e-mail: <a href="mailto:archiwum@tm1.edu.pl" class="text-decoration-none text-dark">archiwum@tm1.edu.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Kierownik gospodarczy, pok. 102:</strong><br>
+                  tel. wew. 114, e-mail: <a href="mailto:boguslawa.gronczynska@tm1.edu.pl" class="text-decoration-none text-dark">boguslawa.gronczynska@tm1.edu.pl</a>
+                </p>
+
+                <p class="fs-6 fs-md-5 mb-3">
+                  <strong>Dział kadr, pok. 101:</strong><br>
+                  tel. wew. 119, e-mail: <a href="mailto:joanna.w@tm1.edu.pl" class="text-decoration-none text-dark">joanna.w@tm1.edu.pl</a><br>
+                  tel. wew. 119, e-mail: <a href="mailto:justyna.k@tm1.edu.pl" class="text-decoration-none text-dark">justyna.k@tm1.edu.pl</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="p-2">
-          <h3 class="text-xl sm:text-3xl lg:text-4xl text-gray-900 mb-4 font-bold leading-none tracking-tight">Samorząd
-            uczniowski</h3>
-          <p class="text-lg sm:text-2xl lg:text-3xl leading-none">Masz pomysły na zmiany? Poznaj inne osoby, które biora
-            sprawy we własne ręce.</p>
-        </div>
-        <div class="p-2">
-          <h3 class="text-xl sm:text-3xl lg:text-4xl text-gray-900 mb-4 font-bold leading-none tracking-tight">Koła
-            zainteresowań</h3>
-          <p class="text-lg sm:text-2xl lg:text-3xl leading-none">Chcesz rozwijać swoje koła zainteresowań? Dołącz do
-            kół uczniowskich lub zbierz rówieśników i załóż własne!</p>
-        </div>
-        <div class="p-2 mt-6">
-          <a href="#"
-            class="bg-[#93041C] text-white px-4 py-2 rounded-md font-bold no-underline hover:opacity-60 transition inline-block">Dowiedz
-            się więcej <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-full px-[5%] lg:px-[10%] py-8 bg-white clear-both">
-      <h2
-        class="text-4xl sm:text-5xl lg:text-5xl text-gray-900 mb-6 font-extrabold leading-none tracking-tight text-center sm:text-left">
-        Firmy współpracujące</h2>
-      <div class="grid grid-cols-2 2xl:grid-cols-4 gap-6 justify-items-center">
-        <img src="img/cisco.png" alt="Cisco" class="max-h-300 items-center sm:text-left mix-blend-multiply brightness-110">
-        <img src="img/polaris.png" alt="Polaris" class="max-h-300 items-center sm:text-left mix-blend-multiply brightness-110">
-        <img src="img/pzu.png" alt="Pzu" class="max-h-300 items-center sm:text-left mix-blend-multiply brightness-110">
-        <img src="img/toyota.png" alt="Toyota" class="max-h-300 items-center sm:text-left mix-blend-multiply brightness-110">
-      </div>
-    </section>
+      `;
+    </script>
   </main>
 
   <!-- Bootstrap odizolowany

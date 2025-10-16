@@ -200,6 +200,37 @@
       </div>
     </section>
 
+    <!-- Sekcja w Bootstrapie (odizolowana przez shadow DOM) w sumie to mi nie pasuje tutaj
+    <div id="bootstrap-perspektywy" class="w-full px-[5%] lg:px-[10%] py-8 bg-[#F7F7F7] flex flex-wrap justify-between"></div>
+
+    <script>
+      const perspektywyZone = document.getElementById('bootstrap-perspektywy');
+      const perspektywyShadow = perspektywyZone.attachShadow({ mode: 'open' });
+      perspektywyShadow.innerHTML = `
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <div class="container my-5 py-5 bg-light rounded shadow-sm">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+              <img src="img/tarcza.png" alt="Złota Tarcza Jakości Szkoły" class="img-fluid rounded" style="max-width: 300px;">
+            </div>
+            <div class="col-md-6">
+              <h2 class="fw-bold text-danger mb-3" style="font-size: 1.875rem; line-height: 1.2;">
+                Złota Tarcza Jakości Szkoły
+              </h2>
+              <p class="fw-normal text-dark mb-3" style="font-size: 1.25rem; line-height: 1.3;">
+                Nasza szkoła od lat znajduje się w ścisłej czołówce szkół technicznych w Polsce.
+                Regularnie zajmujemy miejsca na podium w rankingach edukacyjnych oraz osiągamy doskonałe wyniki z matur i egzaminów zawodowych.
+              </p>
+              <p class="fw-normal text-dark mb-0" style="font-size: 1.25rem; line-height: 1.3;">
+                Dziękujemy uczniom, nauczycielom i rodzicom za wspólną pracę, która pozwala nam utrzymywać najwyższy poziom kształcenia!
+              </p>
+            </div>
+          </div>
+        </div>
+      `;
+    </script>-->
+
     <section class="w-full px-[5%] lg:px-[10%] py-8 bg-white clear-both">
       <h2
         class="text-4xl sm:text-5xl lg:text-5xl text-gray-900 mb-6 font-extrabold leading-none tracking-tight text-center sm:text-left">
